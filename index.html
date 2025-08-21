@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CU FIRST — Carleton University FIRST Alumni & Outreach</title>
+  <meta name="description" content="CU FIRST supports FIRST Robotics outreach at Carleton University: mentorship, events, and STEM engagement across Ottawa." />
+  <meta property="og:title" content="CU FIRST — Carleton University FIRST Alumni & Outreach" />
+  <meta property="og:description" content="Mentors. Events. STEM outreach. Join CU FIRST to support the FIRST community in Ottawa." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/img/og-image.png" />
+  <link rel="icon" href="assets/img/favicon.png" />
+  <link rel="preload" href="assets/css/styles.css" as="style" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="CU FIRST home">
+        <span class="brand-mark">CU</span><span class="brand-text">FIRST</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Toggle navigation</span>
+        ☰
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#sponsors">Sponsors</a></li>
+          <li><a href="#join">Join</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <h1>Carleton University FIRST Alumni & Outreach</h1>
+        <p class="lead">We connect FIRST alumni, mentors, and students at Carleton to grow STEM across Ottawa through mentorship, events, and industry partnerships.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#join">Get Involved</a>
+          <a class="btn btn-outline" href="#events">Upcoming Events</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About CU FIRST</h2>
+        <p>CU FIRST is Carleton’s volunteer-led hub for <strong>FIRST Robotics</strong> alumni and supporters. We mentor local teams, host on-campus outreach like the Fall Showcase and the FRC Kickoff, and partner with Carleton’s Faculty of Engineering and Design to welcome future engineers to campus.</p>
+        <div class="feature-grid">
+          <article class="feature">
+            <h3>Mentorship</h3>
+            <p>Support FRC/FTC/FLL teams across the National Capital Region with technical guidance, workshops, and off‑season projects.</p>
+          </article>
+          <article class="feature">
+            <h3>On‑Campus Events</h3>
+            <p>Bring robotics to Carleton—test fields, scrimmages, and the official FRC Kickoff—so high‑school students experience university labs first‑hand.</p>
+          </article>
+          <article class="feature">
+            <h3>Community & Careers</h3>
+            <p>Link students with alumni and industry sponsors through talks, tours, and recruiting activities.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="events" class="section alt">
+      <div class="container">
+        <h2>Events</h2>
+        <div id="event-cards" class="card-grid" data-events='[
+          {
+            "title": "Fall 2025 FIRST Outreach Showcase",
+            "date": "2025-10-04",
+            "location": "Carleton University",
+            "desc": "Robots on display, pit tours, mentor meet‑and‑greet, and lab visits.",
+            "link": "#"
+          },
+          {
+            "title": "2026 FRC Kickoff at Carleton",
+            "date": "2026-01-03",
+            "location": "Campus Theatre & Atrium",
+            "desc": "Game reveal, kit distribution, and team networking on campus.",
+            "link": "#"
+          },
+          {
+            "title": "Winter 2026 Test‑Field Series",
+            "date": "2026-02-15",
+            "location": "University Centre Atrium",
+            "desc": "Practice matches on a regulation‑size field to prepare for competition.",
+            "link": "#"
+          }
+        ]'>
+        </div>
+        <p class="note">Want your event listed? <a href="#join">Contact us</a>.</p>
+      </div>
+    </section>
+
+    <section id="sponsors" class="section">
+      <div class="container">
+        <h2>Sponsors & Partners</h2>
+        <p>We work with Carleton units, local industry, and community partners to deliver high‑impact STEM outreach. Interested in supporting CU FIRST? <a href="#join">Get in touch</a>.</p>
+        <div class="logo-grid">
+          <div class="logo-cell" aria-label="Sponsor placeholder">
+            <img src="assets/img/sponsor-placeholder.svg" alt="Sponsor logo placeholder" />
+          </div>
+          <div class="logo-cell">
+            <img src="assets/img/sponsor-placeholder.svg" alt="Sponsor logo placeholder" />
+          </div>
+          <div class="logo-cell">
+            <img src="assets/img/sponsor-placeholder.svg" alt="Sponsor logo placeholder" />
+          </div>
+          <div class="logo-cell">
+            <img src="assets/img/sponsor-placeholder.svg" alt="Sponsor logo placeholder" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="join" class="section alt">
+      <div class="container">
+        <h2>Join Us</h2>
+        <p>Students, alumni, mentors, and sponsors are welcome. Join the mailing list or send us a message.</p>
+        <form class="contact-form" method="post" action="https://formspree.io/f/your_form_id">
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required />
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required />
+          </div>
+          <div class="form-row">
+            <label for="role">I am a…</label>
+            <select id="role" name="role">
+              <option>Student</option>
+              <option>FIRST Alumni</option>
+              <option>Mentor/Coach</option>
+              <option>Sponsor/Industry</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us how you’d like to get involved."></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Submit</button>
+          <p class="form-note">This form uses Formspree. Replace <code>your_form_id</code> with your endpoint.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> CU FIRST. All rights reserved.</p>
+      <ul class="social">
+        <li><a href="#" aria-label="Email">Email</a></li>
+        <li><a href="#" aria-label="Discord">Discord</a></li>
+        <li><a href="#" aria-label="YouTube">YouTube</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

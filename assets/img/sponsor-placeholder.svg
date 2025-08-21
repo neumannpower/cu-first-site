@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="100" viewBox="0 0 200 100" role="img" aria-labelledby="t">
+  <title id="t">Sponsor Logo Placeholder</title>
+  <rect width="200" height="100" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <path d="M30,70 L100,30 L170,70" fill="none" stroke="#C8102E" stroke-width="6" />
+  <text x="100" y="85" font-family="Arial, Helvetica, sans-serif" font-size="12" text-anchor="middle" fill="#111">Sponsor</text>
+</svg>

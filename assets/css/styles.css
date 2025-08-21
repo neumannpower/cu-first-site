@@ -1,0 +1,84 @@
+/* CU FIRST minimal theme — Red / Black / White, white background */
+:root{
+  --red:#C8102E; /* flag red */
+  --black:#111111;
+  --white:#FFFFFF;
+  --muted:#6B7280;
+  --border:#E5E7EB;
+  --bg:#FFFFFF;
+  --bg-alt:#FAFAFA;
+  --radius:1rem;
+  --shadow:0 6px 18px rgba(0,0,0,0.07);
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--black);font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.5}
+img{max-width:100%;display:block}
+a{color:var(--red);text-decoration:none}
+a:hover{text-decoration:underline}
+.container{width:min(1100px, 92%);margin-inline:auto}
+
+/* Accessibility helpers */
+.skip-link{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}
+.skip-link:focus{position:static;width:auto;height:auto;padding:.5rem 1rem;background:var(--red);color:#fff;border-radius:.5rem}
+
+/* Header */
+.site-header{position:sticky;top:0;background:var(--white);border-bottom:1px solid var(--border);z-index:20}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:.8rem 0}
+.brand{display:inline-flex;align-items:baseline;gap:.35rem;font-weight:800;font-size:1.25rem;color:var(--black)}
+.brand-mark{display:inline-grid;place-items:center;background:var(--black);color:#fff;border-radius:.5rem;padding:.2rem .4rem;letter-spacing:.5px}
+.brand-text{letter-spacing:2px}
+.nav-toggle{display:none;background:none;border:1px solid var(--border);padding:.4rem .6rem;border-radius:.5rem;font-size:1rem}
+.site-nav ul{display:flex;gap:1rem;margin:0;padding:0;list-style:none}
+.site-nav a{display:inline-block;padding:.4rem .6rem;border-radius:.5rem;color:var(--black)}
+.site-nav a:hover{background:var(--bg-alt)}
+
+/* Hero */
+.hero{background:linear-gradient(180deg, #fff 0, #fff 55%, #f7f7f7 100%);padding:clamp(2rem, 6vw, 5rem) 0;border-bottom:1px solid var(--border)}
+.hero h1{font-size:clamp(2rem,4vw,3rem);margin:0 0 .5rem 0}
+.lead{font-size:1.125rem;color:#333;max-width:70ch}
+.cta-row{display:flex;gap:.75rem;margin-top:1rem}
+.btn{display:inline-block;padding:.75rem 1rem;border-radius:.75rem;border:1px solid var(--black);font-weight:600}
+.btn-primary{background:var(--red);border-color:var(--red);color:#fff}
+.btn-outline{background:transparent;color:var(--black)}
+
+/* Sections */
+.section{padding:clamp(2rem,6vw,4rem) 0}
+.section.alt{background:var(--bg-alt);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.section h2{margin:0 0 .75rem 0;font-size:1.6rem}
+
+/* Grids */
+.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1rem}
+.feature{background:var(--white);border:1px solid var(--border);border-radius:var(--radius);padding:1rem;box-shadow:var(--shadow)}
+.card-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1rem}
+.card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius);padding:1rem;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:.5rem}
+.card .meta{color:var(--muted);font-size:.95rem}
+
+/* Sponsors */
+.logo-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;align-items:center}
+.logo-cell{border:1px dashed var(--border);border-radius:.75rem;padding:1rem;background:#fff;display:grid;place-items:center}
+
+/* Contact form */
+.contact-form{display:grid;gap:1rem;margin-top:1rem}
+.form-row{display:grid;gap:.35rem}
+input, select, textarea{padding:.7rem .8rem;border:1px solid var(--border);border-radius:.6rem;font:inherit;background:#fff}
+input:focus, select:focus, textarea:focus{outline:2px solid var(--red);outline-offset:1px}
+.form-note{color:var(--muted);font-size:.95rem}
+
+/* Footer */
+.site-footer{border-top:1px solid var(--border);padding:1.2rem 0;background:var(--white)}
+.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.social{display:flex;gap:.9rem;list-style:none;margin:0;padding:0}
+.social a{color:var(--black)}
+
+/* Responsive */
+@media (max-width: 900px){
+  .feature-grid,.card-grid,.logo-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width: 640px){
+  .nav-toggle{display:inline-block}
+  .site-nav{display:none}
+  .site-nav.open{display:block;position:absolute;right:4%;top:3.2rem;background:#fff;border:1px solid var(--border);border-radius:.75rem;box-shadow:var(--shadow)}
+  .site-nav ul{flex-direction:column;padding:.5rem}
+  .feature-grid,.card-grid,.logo-grid{grid-template-columns:1fr}
+}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
